@@ -1,0 +1,246 @@
+:root {
+    --clr-dark: #180d04;
+    --clr-dark-transparent: rgba(24, 13, 4, .8);
+    --clr-primary: #BFBFC1;
+    --clr-primary-dark: #6F4E37;
+    --clr-secondary: #e0e0e0;
+    --clr-primary-light: #e7dfb1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.5em;
+    overflow-x: hidden;
+}
+
+nav {
+    z-index: 9999;
+}
+
+.bloco img {
+    width: 50%;
+    max-width: 100%;
+    margin-bottom: 2rem;
+    border: 8px solid var(--clr-primary-light);
+}
+
+p + img, img + p {
+    margin-left: 2rem;
+}
+
+h2 {
+    margin: 2rem 0;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.navbar {
+    background-color: var(--clr-dark);
+}
+
+.secao {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    padding: 5rem 0;
+}
+
+#introducao, #documentario, #autoria {
+    background-color: var(--clr-secondary);
+}
+
+#introducao img, #documentario img, #autoria img, #documentario iframe {
+    border: 8px solid var(--clr-primary-dark);
+}
+
+#historia, #galeria, #creditos, footer {
+    background-color: var(--clr-dark);
+    color: var(--clr-primary);
+}
+
+.pagina-inicial h1 {
+    color: transparent;
+    font-size: clamp(1.6rem, 10vw, 6rem);
+    line-height: 60%;
+    z-index: 999;
+}
+
+.pagina-inicial {
+    text-align: center;
+    position: relative;
+    background: url('../images/reuniao-comunidade-2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pagina-inicial::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    inset: 0;
+    background: radial-gradient(var(--clr-dark-transparent), var(--clr-dark));
+}
+
+.nome-quilombo {
+    animation: entrarNomeComunidade 300ms ease-in-out 1s normal forwards;
+    font-family: "Rubik Moonrocks", sans-serif;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.nome-deBarrocas {
+    font-family: "Rubik", serif;
+    /*color: var(--clr-primary);*/
+    animation: entrarNomeComunidade 300ms ease-in-out 1s normal forwards;
+    font-size: .6em;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.bloco {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.bloco img + img {
+    margin-left: 1rem;
+}
+
+#documentario .video {
+    text-align: center;
+}
+
+.grade-imagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#galeria img {
+    width: 48%;
+    /* width: 49%; */
+    /* margin: 0; */
+}
+
+footer {
+    padding: 3rem 0;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 992px) {
+    .bloco {
+        flex-direction: column;
+    }
+
+    .bloco img {
+        width: auto;
+        margin-left: 0;
+    }
+
+    .bloco p {
+        margin-left: 0;
+    }
+
+    #galeria img {
+        width: auto;
+        /* width: 49%; */
+        /* margin: 0; */
+    }
+  }
+
+/* ANIMACOES */
+@keyframes entrarNomeComunidade {
+    0% {
+        background: -webkit-linear-gradient(135deg, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    10% {
+        background: -webkit-linear-gradient(135deg, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, var(--clr-primary-dark));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    20% {
+        background: -webkit-linear-gradient(135deg, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, var(--clr-primary-dark), var(--clr-primary-light));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    30% {
+        background: -webkit-linear-gradient(135deg, transparent, transparent, transparent, transparent, transparent, transparent, transparent, var(--clr-primary-dark), var(--clr-primary-light), var(--clr-primary-dark));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    40% {
+        background: -webkit-linear-gradient(135deg, transparent, transparent, transparent, transparent, transparent, transparent, var(--clr-primary-dark), var(--clr-primary-light), var(--clr-primary-dark));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    50% {
+        background: -webkit-linear-gradient(135deg, transparent, transparent, transparent, transparent, transparent, var(--clr-primary-dark), var(--clr-primary-light), var(--clr-primary-dark));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    60% {
+        background: -webkit-linear-gradient(135deg, transparent, transparent, transparent, transparent, var(--clr-primary-dark), var(--clr-primary-light), var(--clr-primary-dark));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    70% {
+        background: -webkit-linear-gradient(135deg, transparent, transparent, transparent, var(--clr-primary-dark), var(--clr-primary-light), var(--clr-primary-dark));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    80% {
+        background: -webkit-linear-gradient(135deg, transparent, transparent, var(--clr-primary-dark), var(--clr-primary-light), var(--clr-primary-dark));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    90% {
+        background: -webkit-linear-gradient(135deg, transparent, var(--clr-primary-dark), var(--clr-primary-light), var(--clr-primary-dark));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    100% {
+        background: -webkit-linear-gradient(135deg, var(--clr-primary-dark), var(--clr-primary-light), var(--clr-primary-dark));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
