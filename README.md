@@ -1,6 +1,9 @@
 # Quilombo Barrocas Website
 Este repositório contém o código-fonte do website do Quilombo Barrocas, desenvolvido para atender a uma atividade prática da faculdade de Eng. de Software, que visava promover a cultura, história e informações sobre a comunidade.
 
+## Hero Section do Site
+![image](https://github.com/user-attachments/assets/77053d78-5393-4988-90c7-bf63d3473ddf)
+
 ## Estrutura do Projeto
 - index.html: Página principal do site.
 - css/: Contém os arquivos de estilo usados no site.
