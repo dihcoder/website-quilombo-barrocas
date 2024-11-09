@@ -19,7 +19,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="./css/style.css">
-    <title>Quilombo Barrocas</title>
+    <title id="tabTitle">Quilombo Barrocas</title>
 </head>
 
 <body>
@@ -36,31 +36,42 @@
                         <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#introducao">Introdução</a>
+                        <a class="nav-link" id="linkItroduction" href="#introducao">Introdução</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#historia">História</a>
+                        <a class="nav-link" id="linkHistory" href="#historia">História</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#documentario">Documentário</a>
+                        <a class="nav-link" id="linkDocumentary" href="#documentario">Documentário</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#galeria">Galeria</a>
+                        <a class="nav-link" id="linkGallery" href="#galeria">Galeria</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#autoria">Autoria</a>
+                        <a class="nav-link" id="linkAuthorship" href="#autoria">Autoria</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <!-- Default dropup button -->
+    <div class="btn-group dropup">
+        <button type="button" class="btn btn-outline-success dropdown-toggle" data-bs-toggle="dropdown"
+            aria-expanded="false" id="btnLanguageSwitcher">
+            🇧🇷 PT-BR
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">🇧🇷 PT-BR</a></li>
+            <li><a class="dropdown-item" href="#">🇺🇸 EN-US</a></li>
+        </ul>
+    </div>
     <section id="inicio" class="secao pagina-inicial">
         <h1>
-            <small class="nome-quilombo">
-                Quilombo<br>
+            <small class="nome-quilombo" id="pageTitle_a">
+                Quilombo
             </small>
-
-            <small class="nome-deBarrocas">
+            <br>
+            <small class="nome-deBarrocas" id="pageTitle_b">
                 de Barrocas
             </small>
         </h1>
@@ -68,49 +79,32 @@
     <main>
         <section id="introducao" class="secao">
             <div class="container">
-                <h2>Introdução à Comunidade Quilombola de Barrocas</h2>
+                <h2 id="introductionTitle">Introdução à Comunidade Quilombola de Barrocas</h2>
                 <div class="bloco">
-                    <p>
+                    <p id="locationAndFoundation">
                         Localizada a 15 km ao sul de Vitória da Conquista, na Bahia, encontra-se a vibrante comunidade
-                        quilombola de
-                        Barrocas. Situada às margens da BA-263, a estrada que conecta Vitória da Conquista a Itambé,
-                        essa
-                        comunidade
-                        possui uma história rica e profundamente enraizada na cultura afro-brasileira. Fundada na década
-                        de
-                        1920,
-                        Barrocas emergiu como um refúgio para aqueles que buscavam escapar da opressão e encontrar
-                        liberdade
-                        em suas
-                        terras.
+                        quilombola de Barrocas. Situada às margens da BA-263, a estrada que conecta Vitória da Conquista
+                        a Itambé, essa comunidade possui uma história rica e profundamente enraizada na cultura
+                        afro-brasileira. Fundada na década de 1920, Barrocas emergiu como um refúgio para aqueles que
+                        buscavam escapar da opressão e encontrar liberdade em suas terras.
                     </p>
                     <img src="./images/tinified/ladeira-comunidade.png" alt="">
                 </div>
                 <div class="bloco">
                     <img src="./images/tinified/via-principal-5.png" alt="">
-                    <p>
+                    <p id="grouthAndName">
                         Ao longo dos anos, Barrocas cresceu e se desenvolveu, tornando-se o lar de mais de 1400
-                        moradores
-                        dedicados
-                        a preservar suas tradições e valores culturais. O nome "Barrocas" remonta aos tempos antigos,
-                        quando
-                        os
-                        moradores trabalhavam na produção de tijolos e telhas, notando os buracos na região e dando à
-                        fazenda o nome
-                        de Fazenda Barrocas.
+                        moradores dedicados a preservar suas tradições e valores culturais. O nome "Barrocas" remonta
+                        aos tempos antigos, quando os moradores trabalhavam na produção de tijolos e telhas, notando os
+                        buracos na região e dando à fazenda o nome de Fazenda Barrocas.
                     </p>
                 </div>
                 <div>
-                    <p>
+                    <p id="identityAndCulture">
                         Apesar dos desafios enfrentados ao longo das décadas, a comunidade de Barrocas perseverou,
-                        mantendo
-                        viva sua
-                        identidade como remanescentes de quilombo. Sua importância cultural se estende além das
-                        fronteiras
-                        físicas
-                        da comunidade, influenciando e enriquecendo a diversidade cultural da região de Vitória da
-                        Conquista
-                        e além.
+                        mantendo viva sua identidade como remanescentes de quilombo. Sua importância cultural se estende
+                        além das fronteiras físicas da comunidade, influenciando e enriquecendo a diversidade cultural
+                        da região de Vitória da Conquista e além.
                     </p>
                 </div>
             </div>
@@ -118,57 +112,53 @@
 
         <section id="historia" class="secao">
             <div class="container">
-                <h2>História, Tradições e Estilo de Vida da Comunidade Quilombola de Barrocas</h2>
+                <h2 id="historyTraditionAndLifestyleTitle">História, Tradições e Estilo de Vida da Comunidade Quilombola
+                    de Barrocas</h2>
 
                 <div class="bloco">
-                    <p>
+                    <p id="communityChallenges">
                         A história da comunidade quilombola de Barrocas é um testemunho de resistência e resiliência.
-                        Desde
-                        sua fundação na década de 1920, os moradores enfrentaram desafios significativos, trabalhando
-                        incansavelmente sob o sol escaldante para garantir sua sobrevivência. Inicialmente, o acesso à
-                        comunidade era difícil, com estradas precárias e apenas o carreirinho como via de transporte.
+                        Desde sua fundação na década de 1920, os moradores enfrentaram desafios significativos,
+                        trabalhando incansavelmente sob o sol escaldante para garantir sua sobrevivência. Inicialmente,
+                        o acesso à comunidade era difícil, com estradas precárias e apenas o carreirinho como via de
+                        transporte.
                     </p>
                     <img src="./images/tinified/estrada-principal.png" alt="">
                 </div>
                 <div class="bloco">
                     <img src="./images/tinified/casa-de-farinha.png" alt="">
-                    <p>
+                    <p id="survivalActivities">
                         No entanto, os moradores perseveraram, dedicando-se à agricultura e à produção de alimentos como
                         mandioca, principal fonte de subsistência. A vida na comunidade girava em torno da casa de
-                        farinha,
-                        onde as famílias se reuniam para processar a mandioca e produzir derivados como goma, beijú e
-                        massa
-                        de aipim. Essas atividades não apenas sustentavam a comunidade, mas também fortaleciam seus
-                        laços
-                        sociais e culturais.
+                        farinha, onde as famílias se reuniam para processar a mandioca e produzir derivados como goma,
+                        beijú e massa de aipim. Essas atividades não apenas sustentavam a comunidade, mas também
+                        fortaleciam seus laços sociais e culturais.
                     </p>
                 </div>
                 <div class="bloco">
-                    <p>
+                    <p id="religiousTraditions">
                         As tradições culturais são uma parte essencial da identidade de Barrocas. A religião católica é
                         predominante, com a Igreja Nossa Senhora da Piedade desempenhando um papel central na vida
                         espiritual da comunidade. Os moradores mantêm vivas as tradições religiosas, como montar
-                        presépios e
-                        rezar os Benditos, enquanto celebram festividades como o terno de reis.
+                        presépios e rezar os Benditos, enquanto celebram festividades como o terno de reis.
                     </p>
                     <img src="./images/tinified/igreja-catolica.png" alt="">
                 </div>
                 <div class="bloco">
                     <img src="./images/tinified/edvaldo-santos-violao.png" alt="">
-                    <p>
+                    <p id="musicExpression">
                         Além disso, a música é uma forma de expressão profundamente enraizada na cultura de Barrocas.
-                        Mesmo
-                        diante das dificuldades, os moradores encontram tempo para se reunir, compartilhar histórias e
-                        relembrar o passado por meio da música, mantendo viva a herança cultural que define sua
-                        comunidade.
+                        Mesmo diante das dificuldades, os moradores encontram tempo para se reunir, compartilhar
+                        histórias e relembrar o passado por meio da música, mantendo viva a herança cultural que define
+                        sua comunidade.
                     </p>
                 </div>
                 <div>
-                    <p>
+                    <p id="africanRoots">
                         O estilo de vida em Barrocas reflete os valores de solidariedade, respeito pela natureza e
-                        orgulho
-                        de suas raízes africanas. Apesar dos desafios enfrentados, os moradores permanecem unidos,
-                        determinados a preservar sua identidade cultural e garantir um futuro próspero para as gerações
+                        orgulho de suas raízes africanas. Apesar dos desafios enfrentados, os moradores permanecem
+                        unidos, determinados a preservar sua identidade cultural e garantir um futuro próspero para as
+                        gerações
                         vindouras.
                     </p>
                 </div>
@@ -178,13 +168,15 @@
 
         <section id="documentario" class="secao">
             <div class="container">
-                <h2>Documentário PEJ Adélia Quilombo de Barrocas</h2>
-                <p>O vídeo a seguir foi criado por Adelia Silva, como parte de seu Trabalho de Conclusão de Curso
+                <h2 id="documentaryTitle">Documentário PEJ Adélia Quilombo de Barrocas</h2>
+                <p id="documentaryDescription">O vídeo a seguir foi criado por Adelia Silva, como parte de seu Trabalho
+                    de Conclusão de Curso
                     (2018), em
                     homenagem à comunidade do povoado de Barrocas e, em especial, aos seus moradores. A autora agradece
                     a todos que concederam entrevistas e contribuíram para a realização deste projeto.</p>
-                <p><small>Clique <a href="https://youtu.be/sSCxMRMQezQ?si=44A7XsNHSuhjfemw">aqui</a> para acessar o
-                        video no canal da autora</small></p>
+                <p><small id="ctaOriginalDocumentaryVideo">Vídeo disponível no canal da autora: </small><small><a
+                            id="btnOriginalDocumentaryVideo"
+                            href="https://youtu.be/sSCxMRMQezQ?si=44A7XsNHSuhjfemw">acessar</a></small></p>
 
                 <div class="video-container">
                     <iframe class="responsive-iframe"
@@ -199,7 +191,7 @@
 
         <section id="galeria" class="secao">
             <div class="container">
-                <h2>
+                <h2 id="galleryTitle">
                     Galeria de imagens da comunidade
                 </h2>
                 <div class="grade-imagens">
@@ -225,16 +217,20 @@
 
         <section id="autoria" class="secao">
             <div class="container">
-                <h2>Autoria e Propósito do Projeto</h2>
-                <p>Este website foi desenvolvido por Diego Medeiros, graduando em Engenharia de Software pela Unopar
+                <h2 id="authorshipTitle">Autoria e Propósito do Projeto</h2>
+                <p id="authorIntroduction">Este website foi desenvolvido por Diego Medeiros, graduando em Engenharia de
+                    Software pela Unopar
                     Anhanguera, como parte de atividades extensionistas da universidade.</p>
 
-                <p>O projeto tem como objetivo apoiar a sociedade na busca por soluções que promovam melhorias para
+                <p id="projectGoals">O projeto tem como objetivo apoiar a sociedade na busca por soluções que promovam
+                    melhorias para
                     grupos específicos ou para a comunidade em geral. Em particular, este site foi idealizado para
                     abordar a falta de visibilidade e reconhecimento da rica cultura, história e tradições da comunidade
                     quilombola de Barrocas.</p>
 
-                <p>Sabemos que, muitas vezes, comunidades quilombolas enfrentam marginalização, discriminação e pouca
+                <p id="projectAdvantages">Sabemos que, muitas vezes, comunidades quilombolas enfrentam marginalização,
+                    discriminação e
+                    pouca
                     representatividade nos meios de comunicação e na sociedade em geral. Assim, ao oferecer conteúdo que
                     valoriza e preserva aspectos culturais, históricos e tradicionais dessa comunidade, este website
                     contribui para fortalecer a identidade quilombola e promover maior reconhecimento e respeito por
@@ -245,8 +241,11 @@
     <footer>
         <div class="container">
             <small>&copy; 2024 - Diego Medeiros Silva</small>
-            <small>Clique <a href="https://github.com/diegobyter/website-quilombo-barrocas">aqui</a> para acessar o
-                repositório desse projeto no GitHub</small>
+            <div>
+                <small id="ctaGitHubProjectRepository">Acesse o repositório desse projeto no GitHub clicando </small>
+                <small><a id="btnGitHubProjectRepository"
+                        href="https://github.com/diegobyter/website-quilombo-barrocas">aqui</a></small>
+            </div>
         </div>
     </footer>
 

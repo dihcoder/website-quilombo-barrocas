@@ -18,6 +18,13 @@ body {
     overflow-x: hidden;
 }
 
+.btn-group.dropup {
+    position: fixed;
+    left: 3px;
+    bottom: 3px;
+    z-index: 999;
+}
+
 nav {
     z-index: 9999;
 }
@@ -29,7 +36,8 @@ nav {
     border: 8px solid var(--clr-primary-light);
 }
 
-p + img, img + p {
+p+img,
+img+p {
     margin-left: 2rem;
 }
 
@@ -55,15 +63,23 @@ p {
     padding: 5rem 0;
 }
 
-#introducao, #documentario, #autoria {
+#introducao,
+#documentario,
+#autoria {
     background-color: var(--clr-secondary);
 }
 
-#introducao img, #documentario img, #autoria img, #documentario iframe {
+#introducao img,
+#documentario img,
+#autoria img,
+#documentario iframe {
     border: 8px solid var(--clr-primary-dark);
 }
 
-#historia, #galeria, #creditos, footer {
+#historia,
+#galeria,
+#creditos,
+footer {
     background-color: var(--clr-dark);
     color: var(--clr-primary);
 }
@@ -115,7 +131,7 @@ p {
     margin-top: 2rem;
 }
 
-.bloco img + img {
+.bloco img+img {
     margin-left: 1rem;
 }
 
@@ -123,18 +139,19 @@ p {
     position: relative;
     overflow: hidden;
     width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
 
 /* Then style the iframe to fit in the container div with full height and width */
 .responsive-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .grade-imagens {
@@ -177,7 +194,7 @@ footer .container {
         /* width: 49%; */
         /* margin: 0; */
     }
-  }
+}
 
 /* ANIMACOES */
 @keyframes entrarNomeComunidade {
