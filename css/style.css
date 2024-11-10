@@ -65,8 +65,21 @@ p {
 
 #introducao,
 #documentario,
-#autoria {
+#autoria,
+.modal-content {
     background-color: var(--clr-secondary);
+}
+
+.modal-header {
+    padding: 1rem 1rem 0 1rem;
+}
+
+.modal-body {
+    padding: 0 1rem;
+}
+
+.modal-footer {
+    padding: 10px;
 }
 
 #introducao img,
