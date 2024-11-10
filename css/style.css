@@ -18,6 +18,14 @@ body {
     overflow-x: hidden;
 }
 
+p {
+    font-size: 1.5rem;
+}
+
+.blockquote {
+    padding-top: 1.5rem;
+}
+
 .btn-group.dropup {
     position: fixed;
     left: 3px;
@@ -107,7 +115,7 @@ footer {
 .pagina-inicial {
     text-align: center;
     position: relative;
-    background: url('../images/reuniao-comunidade-2.jpg');
+    background: url('../images/tinified/reuniao-comunidade-2.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -146,6 +154,18 @@ footer {
 
 .bloco img+img {
     margin-left: 1rem;
+}
+
+.bloco .author-img {
+    width: 300px;
+}
+
+.bloco img+div {
+    margin-left: 1rem;
+}
+
+.bloco .author-img {
+    margin: 0;
 }
 
 #documentario .video-container {
@@ -196,6 +216,15 @@ footer .container {
     .bloco img {
         width: auto;
         margin-left: 0;
+    }
+
+    .bloco img+div {
+        margin-left: 0;
+    }
+
+    .bloco .author-img {
+        width: 270px;
+        height: 320px;
     }
 
     .bloco p {
