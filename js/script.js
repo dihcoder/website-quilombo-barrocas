@@ -12,9 +12,6 @@ function loadLanguageFile(language) {
 }
 
 async function switchLanguage(language) {
-    if ($('html').attr('lang') === language)
-        return false;
-
     $('html').attr('lang', language)
 
     fetchedData = await loadLanguageFile(language);
