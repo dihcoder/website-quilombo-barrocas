@@ -1,3 +1,5 @@
+let fetchedData = null;
+
 function detectLanguage() {
     const lang = navigator.language || navigator.userLanguage;
     return lang.startsWith('pt') ? 'pt' : 'en';
@@ -15,11 +17,11 @@ async function switchLanguage(language) {
 
     $('html').attr('lang', language)
 
-    const content = await loadLanguageFile(language);
+    fetchedData = await loadLanguageFile(language);
 
     localStorage.setItem('preferredLanguage', language);
 
-    for (const [key, value] of Object.entries(content)) {
+    for (const [key, value] of Object.entries(fetchedData)) {
         const htmlTag = document.getElementById(key);
         if (htmlTag) htmlTag.textContent = value;
     }
@@ -33,11 +35,14 @@ function removeLanguagePreference() {
     $('.modal-footer').html("");
 
     $('.modal-body').html(`<img src="./images/icons/check.gif" class="img-fluid mx-auto d-block" width="100px" alt="">
-            <p class="text-center">Removido!</p>`)
+            <p class="text-center">${fetchedData.removed}</p>`)
 
     setTimeout(() => $('#staticBackdrop').modal('hide'), 1800)
 
-    setTimeout(() => $('#staticBackdrop .modal-content').html(modalBeforeChanges), 2000)
+    setTimeout(() => {
+        $('#staticBackdrop .modal-content').html(modalBeforeChanges)
+        location.reload()
+    }, 2000)
 }
 
 const userPreferredLanguage = localStorage.getItem('preferredLanguage') || detectLanguage();

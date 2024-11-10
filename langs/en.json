@@ -15,6 +15,14 @@
 
   "btnLanguageSwitcher": "🇺🇸 EN-US",
 
+  "noticePreferenceStorage": "We store your language preference in your browser. If you wish to remove this preference safely, click the 'Clear preferences' button below.",
+
+  "btnUnderstood": "Sure",
+
+  "btnClearPreferences": "Clear preferences",
+
+  "removed": "Removed!",
+
   "pageTitle_a": "Barrocas",
 
   "pageTitle_b": "Quilombo",

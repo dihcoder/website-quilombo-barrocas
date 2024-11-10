@@ -76,14 +76,16 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <small>
+                    <small id="noticePreferenceStorage">
                         Armazenamos sua preferência de idioma no seu navegador. Se quiser remover essa preferência de
                         forma
                         segura, clique no botão "Limpar preferências" abaixo.</small>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Entendido</button>
-                    <button type="button" class="btn btn-danger" onclick="removeLanguagePreference()">Limpar
+                    <button type="button" class="btn btn-secondary" id="btnUnderstood"
+                        data-bs-dismiss="modal">Entendido</button>
+                    <button type="button" class="btn btn-danger" id="btnClearPreferences"
+                        onclick="removeLanguagePreference()">Limpar
                         preferências</button>
                 </div>
             </div>
