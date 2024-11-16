@@ -1,13 +1,36 @@
 # Quilombo Barrocas Website
 ![image](https://github.com/user-attachments/assets/9279277e-00a0-4e54-97c3-758bce179261)
 
+<br/>
+<br/>
+
+## Table of Contents / índice
+
+1. [English](#english)
+    - [About the Project](#about-the-project)
+    - [Project Structure](#project-structure)
+    - [Features](#features)
+    - [How to Use](#how-to-use)
+    - [Technologies used](#technologies-used)
+    - [Contributing](#contributing)
+2. [Português](#português)
+    - [Sobre o Projeto](#sobre-o-projeto)
+    - [Estrutura do Projeto](#estrutura-do-projeto)
+    - [Funcionalidades](#funcionalidades)
+    - [Como Usar](#como-usar)
+    - [Tecnologias Utilizadas](#tecnologias-utilizadas)
+    - [Contribuições](#contribuições)
+
+<br/>
+<br/>
+<br/>
+
+---
+
+### English
+## About the Project
 This repository contains the source code for the Quilombo Barrocas website, developed as part of a Software Engineering college project. It aims to promote the culture, history, and information about the community.
-
-Este repositório contém o código-fonte do website do Quilombo Barrocas, desenvolvido para atender a uma atividade prática da faculdade de Eng. de Software, que visava promover a cultura, história e informações sobre a comunidade.
-
-# English
-## Access Link
-Visit the live website [here](https://quilombo-barrocas.netlify.app/).
+- Visit the live website [here](https://quilombo-barrocas.netlify.app/).
 
 ## Project Structure
 - index.html: Main page.
@@ -35,9 +58,18 @@ Visit the live website [here](https://quilombo-barrocas.netlify.app/).
 - JSON: Store translated text contents
 - Images: Visual resources illustrating Quilombo culture.
 
+## Contributing
+Feel free to open issues or submit pull requests.
 
-# Português
-## Link de acesso
+<br/>
+<br/>
+<br/>
+
+---
+
+### Português
+## Sobre o Projeto
+Este repositório contém o código-fonte do website do Quilombo Barrocas, desenvolvido para atender a uma atividade prática da faculdade de Eng. de Software, que visava promover a cultura, história e informações sobre a comunidade.
 - Acesse esse website em produção clicando [aqui](https://quilombo-barrocas.netlify.app/).
 
 ## Estrutura do Projeto
@@ -66,6 +98,5 @@ Visit the live website [here](https://quilombo-barrocas.netlify.app/).
 - JSON: Armazenar conteúdos de texto traduzidos.
 - Images: Recursos visuais que ilustram a cultura do Quilombo.
 
-## Contributing / Contribuições
-Feel free to open issues or submit pull requests.
+## Contribuições
 Sinta-se à vontade para abrir issues ou enviar pull requests.
