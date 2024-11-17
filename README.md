@@ -1,5 +1,5 @@
 # Quilombo Barrocas Website
-![image](https://github.com/user-attachments/assets/9279277e-00a0-4e54-97c3-758bce179261)
+![Quilombo](https://github.com/user-attachments/assets/4f82f479-dd4e-4197-97bb-afb03edba8f3)
 
 <br/>
 <br/>
