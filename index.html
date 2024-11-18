@@ -55,7 +55,7 @@
         </div>
     </nav>
     <!-- Default dropup button -->
-    <div class="btn-group dropup fixed-bottom d-inline-block">
+    <div class="btn-group dropup">
         <button type="button" class="btn btn-outline-success dropdown-toggle" data-bs-toggle="dropdown"
             aria-expanded="false" id="btnLanguageSwitcher">
             🇧🇷 PT-BR
@@ -91,9 +91,8 @@
             </div>
         </div>
     </div>
-    <section id="inicio"
-        class="secao pagina-inicial d-flex align-items-center justify-content-md-center vh-100 w-100 bg-dark">
-        <h1 class="text-light mb-4">
+    <section id="inicio" class="secao pagina-inicial">
+        <h1>
             <small class="nome-quilombo" id="pageTitle_a">
                 Quilombo
             </small>
@@ -106,34 +105,34 @@
     <main>
         <section id="introducao" class="secao">
             <div class="container">
-                <div class="row">
-                    <h2 id="introductionTitle" class="mt-5 mb-2">Introdução à Comunidade Quilombola de Barrocas</h2>
-                    <p class="col" id="locationAndFoundation">
+                <h2 id="introductionTitle">Introdução à Comunidade Quilombola de Barrocas</h2>
+                <div class="bloco">
+                    <p id="locationAndFoundation">
                         Localizada a 15 km ao sul de Vitória da Conquista, na Bahia, encontra-se a vibrante comunidade
                         quilombola de Barrocas. Situada às margens da BA-263, a estrada que conecta Vitória da Conquista
                         a Itambé, essa comunidade possui uma história rica e profundamente enraizada na cultura
                         afro-brasileira. Fundada na década de 1920, Barrocas emergiu como um refúgio para aqueles que
                         buscavam escapar da opressão e encontrar liberdade em suas terras.
                     </p>
-                    <img class="col img-fluid rounded" src="./images/ladeira-comunidade.png"
-                        alt="Ladeira na rua principal do povoado">
+                    <img src="./images/ladeira-comunidade.png" alt="Ladeira na rua principal do povoado">
                 </div>
-
-                <p id="grouthAndName">
-                    Ao longo dos anos, Barrocas cresceu e se desenvolveu, tornando-se o lar de mais de 1400
-                    moradores dedicados a preservar suas tradições e valores culturais. O nome "Barrocas" remonta
-                    aos tempos antigos, quando os moradores trabalhavam na produção de tijolos e telhas, notando os
-                    buracos na região e dando à fazenda o nome de Fazenda Barrocas.
-                </p>
-                <img src="./images/via-principal-5.png" alt="Rua principal do povoado">
-
-                <p id="identityAndCulture">
-                    Apesar dos desafios enfrentados ao longo das décadas, a comunidade de Barrocas perseverou,
-                    mantendo viva sua identidade como remanescentes de quilombo. Sua importância cultural se estende
-                    além das fronteiras físicas da comunidade, influenciando e enriquecendo a diversidade cultural
-                    da região de Vitória da Conquista e além.
-                </p>
-
+                <div class="bloco">
+                    <img src="./images/via-principal-5.png" alt="Rua principal do povoado">
+                    <p id="grouthAndName">
+                        Ao longo dos anos, Barrocas cresceu e se desenvolveu, tornando-se o lar de mais de 1400
+                        moradores dedicados a preservar suas tradições e valores culturais. O nome "Barrocas" remonta
+                        aos tempos antigos, quando os moradores trabalhavam na produção de tijolos e telhas, notando os
+                        buracos na região e dando à fazenda o nome de Fazenda Barrocas.
+                    </p>
+                </div>
+                <div>
+                    <p id="identityAndCulture">
+                        Apesar dos desafios enfrentados ao longo das décadas, a comunidade de Barrocas perseverou,
+                        mantendo viva sua identidade como remanescentes de quilombo. Sua importância cultural se estende
+                        além das fronteiras físicas da comunidade, influenciando e enriquecendo a diversidade cultural
+                        da região de Vitória da Conquista e além.
+                    </p>
+                </div>
             </div>
         </section>
 
@@ -221,63 +220,7 @@
                 <h2 id="galleryTitle">
                     Galeria de imagens da comunidade
                 </h2>
-                <div class="row">
-                    <div class="column">
-                        <img class="img-fluid" src="./images/casa-farinha-interior.png"
-                            alt="Interior de uma casa de farinha">
-                        <img class="img-fluid" src="./images/casa-farinha-interior.png"
-                            alt="Interior de uma casa de farinha">
-                        <img class="img-fluid" src="./images/casa-farinha-interior.png"
-                            alt="Interior de uma casa de farinha">
-                        <img class="img-fluid" src="./images/casa-farinha-interior.png"
-                            alt="Interior de uma casa de farinha">
-                        <img class="img-fluid" src="./images/casa-farinha-interior.png"
-                            alt="Interior de uma casa de farinha">
-                        <img class="img-fluid" src="./images/casa-farinha-interior.png"
-                            alt="Interior de uma casa de farinha">
-                    </div>
-                    <div class="column">
-                        <img class="img-fluid" src="./images/familia-comunidade.png"
-                            alt="Uma das familias da comunidade">
-                        <img class="img-fluid" src="./images/familia-comunidade.png"
-                            alt="Uma das familias da comunidade">
-                        <img class="img-fluid" src="./images/familia-comunidade.png"
-                            alt="Uma das familias da comunidade">
-                        <img class="img-fluid" src="./images/familia-comunidade.png"
-                            alt="Uma das familias da comunidade">
-                        <img class="img-fluid" src="./images/familia-comunidade.png"
-                            alt="Uma das familias da comunidade">
-                        <img class="img-fluid" src="./images/familia-comunidade.png"
-                            alt="Uma das familias da comunidade">
-                    </div>
-                    <div class="column">
-                        <img class="img-fluid" src="./images/grupo-terno-reis.png" alt="Grupo de terno de reis">
-                        <img class="img-fluid" src="./images/grupo-terno-reis.png" alt="Grupo de terno de reis">
-                        <img class="img-fluid" src="./images/grupo-terno-reis.png" alt="Grupo de terno de reis">
-                        <img class="img-fluid" src="./images/grupo-terno-reis.png" alt="Grupo de terno de reis">
-                        <img class="img-fluid" src="./images/grupo-terno-reis.png" alt="Grupo de terno de reis">
-                        <img class="img-fluid" src="./images/grupo-terno-reis.png" alt="Grupo de terno de reis">
-                        <img class="img-fluid" src="./images/grupo-terno-reis.png" alt="Grupo de terno de reis">
-                        <img class="img-fluid" src="./images/grupo-terno-reis.png" alt="Grupo de terno de reis">
-
-                    </div>
-                    <div class="column">
-                        <img class="img-fluid" src="./images/jamile-presidente-associacao.jpg"
-                            alt="Presidente da associação Jamile Melo">
-                        <img class="img-fluid" src="./images/jamile-presidente-associacao.jpg"
-                            alt="Presidente da associação Jamile Melo">
-                        <img class="img-fluid" src="./images/jamile-presidente-associacao.jpg"
-                            alt="Presidente da associação Jamile Melo">
-                        <img class="img-fluid" src="./images/jamile-presidente-associacao.jpg"
-                            alt="Presidente da associação Jamile Melo">
-                        <img class="img-fluid" src="./images/jamile-presidente-associacao.jpg"
-                            alt="Presidente da associação Jamile Melo">
-                        <img class="img-fluid" src="./images/jamile-presidente-associacao.jpg"
-                            alt="Presidente da associação Jamile Melo">
-                    </div>
-                </div>
                 <div class="grade-imagens">
-
                     <img class="img-fluid" src="./images/casa-farinha-interior.png"
                         alt="Interior de uma casa de farinha">
                     <img class="img-fluid" src="./images/familia-comunidade.png" alt="Uma das familias da comunidade">
@@ -307,24 +250,26 @@
             <div class="container">
                 <h2 id="authorshipTitle">Autoria e Propósito do Projeto</h2>
                 <div class="bloco bloco-autoria">
-                    <img class="author-img rounded" src="./images/author.jpg" alt="Autor deste website">
-                    <p id="authorIntroduction">Este website foi desenvolvido por Diego Medeiros,
-                        graduando em
-                        Engenharia
-                        de
-                        Software pela Unopar
-                        Anhanguera, como parte de atividades extensionistas da universidade.</p>
-                    <p id="projectGoals">O projeto tem como objetivo apoiar a sociedade na busca por soluções que
-                        promovam
-                        melhorias para
-                        grupos específicos ou para a comunidade em geral. Em particular, este site foi idealizado
-                        para
-                        abordar a falta de visibilidade e reconhecimento da rica cultura, história e tradições da
-                        comunidade
-                        quilombola de Barrocas.</p>
+                    <img class="author-img m-auto rounded" src="./images/author.jpg" alt="Autor deste website">
+                    <div>
+                        <p id="authorIntroduction">Este website foi desenvolvido por Diego Medeiros,
+                            graduando em
+                            Engenharia
+                            de
+                            Software pela Unopar
+                            Anhanguera, como parte de atividades extensionistas da universidade.</p>
+                        <p id="projectGoals">O projeto tem como objetivo apoiar a sociedade na busca por soluções que
+                            promovam
+                            melhorias para
+                            grupos específicos ou para a comunidade em geral. Em particular, este site foi idealizado
+                            para
+                            abordar a falta de visibilidade e reconhecimento da rica cultura, história e tradições da
+                            comunidade
+                            quilombola de Barrocas.</p>
+                    </div>
                 </div>
 
-                <figure style="clear: both;">
+                <figure>
                     <blockquote class="blockquote">
                         <p id="projectAdvantages">Eu penso que, muitas vezes, comunidades quilombolas enfrentam
                             marginalização,
