@@ -2,7 +2,6 @@
 ![Quilombo](https://github.com/user-attachments/assets/4f82f479-dd4e-4197-97bb-afb03edba8f3)
 
 <br/>
-<br/>
 
 ## Table of Contents / índice
 
