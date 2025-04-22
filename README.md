@@ -43,6 +43,7 @@ This repository contains the source code for the Quilombo Barrocas website, deve
 - Mobile-friendly and visually appealing.
 - Includes community images.
 - Site content translation.
+- Chatbot in Portuguese and English (✨ Soon)  
 
 ## How to Use
 - Clone this repository:
@@ -83,6 +84,7 @@ Este repositório contém o código-fonte do website do Quilombo Barrocas, desen
 - Apresentação visual atraente com suporte a dispositivos móveis (responsividade).
 - Inclusão de imagens que retratam a comunidade e seus aspectos culturais.
 - Recurso de tradução de conteúdo do site
+- Chatbot em Português e Inglês (✨ Em breve)
 
 ## Como Usar
 1. Clone este repositório:
