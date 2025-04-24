@@ -1,0 +1,19 @@
+/* :root {
+    --clr-secondary: #e0e0e0;
+} */
+
+.modal-content {
+    background-color: var(--clr-secondary);
+}
+
+.modal-header {
+    padding: 1rem 1rem 0 1rem;
+}
+
+.modal-body {
+    padding: 0 1rem;
+}
+
+.modal-footer {
+    padding: 10px;
+}
