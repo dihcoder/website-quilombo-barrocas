@@ -19,6 +19,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="./css/style.css">
+    <script src="js/index.js" type="module" defer></script>
     <title id="tabTitle">Quilombo Barrocas</title>
 </head>
 
@@ -54,43 +55,7 @@
             </div>
         </div>
     </nav>
-    <!-- Default dropup button -->
-    <div class="btn-group dropup">
-        <button type="button" class="btn btn-outline-success dropdown-toggle" data-bs-toggle="dropdown"
-            aria-expanded="false" id="btnLanguageSwitcher">
-            🇧🇷 PT-BR
-        </button>
-        <ul class="dropdown-menu">
-            <li><a class="dropdown-item language-choice" onclick="switchLanguage('pt')" data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop" href="#">🇧🇷 PT-BR</a></li>
-            <li><a class="dropdown-item language-choice" onclick="switchLanguage('en')" data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop" href="#">🇺🇸 EN-US</a></li>
-        </ul>
-    </div>
-    <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <small id="noticePreferenceStorage">
-                        Armazenamos sua preferência de idioma no seu navegador. Se quiser remover essa preferência de
-                        forma
-                        segura, clique no botão "Limpar preferências" abaixo.</small>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" id="btnUnderstood"
-                        data-bs-dismiss="modal">Entendido</button>
-                    <button type="button" class="btn btn-danger" id="btnClearPreferences"
-                        onclick="removeLanguagePreference()">Limpar
-                        preferências</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     <section id="inicio" class="secao pagina-inicial">
         <h1>
             <small class="nome-quilombo" id="pageTitle_a">
@@ -309,8 +274,6 @@
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-
-    <script src="js/script.js"></script>
 </body>
 
 </html>
