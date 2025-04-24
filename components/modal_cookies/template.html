@@ -1,0 +1,37 @@
+<!-- COOKIES MODAL -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <small id="noticePreferenceStorage">
+                    Armazenamos sua preferência de idioma no seu navegador. Se quiser remover essa preferência de
+                    forma
+                    segura, clique no botão "Limpar preferências" abaixo.</small>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="btnUnderstood"
+                    data-bs-dismiss="modal">Entendido</button>
+                <button type="button" class="btn btn-danger" id="btnClearPreferences">Limpar
+                    preferências</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Default dropup button -->
+<div class="btn-group dropup">
+    <button type="button" class="btn btn-outline-success dropdown-toggle" data-bs-toggle="dropdown"
+        aria-expanded="false" id="btnLanguageSwitcher">
+        🇧🇷 PT-BR
+    </button>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item language-choice" id="ptOptionBtn" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop" href="#">🇧🇷 PT-BR</a></li>
+        <li><a class="dropdown-item language-choice" id="enOptionBtn" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop" href="#">🇺🇸 EN-US</a></li>
+    </ul>
+</div>
