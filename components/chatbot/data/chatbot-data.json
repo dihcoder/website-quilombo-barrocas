@@ -1,0 +1,427 @@
+{
+    "gatilhos": [
+        {
+            "id": "saudacao",
+            "palavras": [
+                "olá",
+                "oi",
+                "bom dia",
+                "boa tarde",
+                "boa noite",
+                "ei",
+                "hello",
+                "hi"
+            ],
+            "resposta": "Olá! Bem-vindo(a) ao chatbot do Quilombo de Barrocas. Como posso ajudar você hoje? Estou aqui para responder suas dúvidas sobre nossa história, cultura, localização ou qualquer informação relacionada à nossa comunidade."
+        },
+        {
+            "id": "historia",
+            "palavras": [
+                "história",
+                "origem",
+                "surgiu",
+                "formou",
+                "criado",
+                "fundado",
+                "surgimento",
+                "formação",
+                "antiguidade",
+                "passado"
+            ],
+            "resposta": "O Quilombo de Barrocas tem uma rica história que remonta ao período colonial brasileiro. Formado por pessoas escravizadas que fugiram em busca de liberdade, nossa comunidade se estabeleceu nesta região e desenvolveu sua própria organização social, cultural e econômica. Os fundadores enfrentaram muitos desafios para estabelecer um território livre e autônomo, resistindo a diversas tentativas de destruição. Essa história de resistência e persistência continua viva em nossa memória coletiva e é passada de geração em geração."
+        },
+        {
+            "id": "cultura",
+            "palavras": [
+                "cultura",
+                "tradição",
+                "dança",
+                "música",
+                "festas",
+                "celebrações",
+                "rituais",
+                "artesanato",
+                "costumes",
+                "tradições",
+                "cultural"
+            ],
+            "resposta": "A cultura do Quilombo de Barrocas é vibrante e rica em tradições que preservam nossa herança africana e afro-brasileira. Nossas manifestações culturais incluem danças tradicionais como o jongo e o samba de roda, músicas com instrumentos como atabaques e berimbaus, além de celebrações religiosas que misturam elementos do candomblé, umbanda e catolicismo popular. O artesanato local também é muito importante, com destaque para trabalhos em cerâmica, cestaria e tecelagem. Realizamos festas anuais que celebram colheitas, santos padroeiros e datas significativas para nossa comunidade."
+        },
+        {
+            "id": "localizacao",
+            "palavras": [
+                "onde",
+                "localização",
+                "fica",
+                "endereço",
+                "chegar",
+                "território",
+                "região",
+                "mapa",
+                "acesso",
+                "distância",
+                "local"
+            ],
+            "resposta": "O Quilombo de Barrocas está localizado na região nordeste do Brasil, no interior da Bahia. Nossa comunidade ocupa um território tradicionalmente habitado há gerações, cercado por vegetação nativa e com acesso por estradas vicinais. Para visitas, recomendamos agendar previamente através de nosso site ou telefone de contato, para garantirmos uma recepção adequada. O acesso pode ser feito de carro a partir das cidades mais próximas, e estamos a aproximadamente 150 km da capital estadual."
+        },
+        {
+            "id": "reconhecimento",
+            "palavras": [
+                "reconhecimento",
+                "certificação",
+                "oficial",
+                "governo",
+                "fundação palmares",
+                "incra",
+                "legal",
+                "direitos",
+                "terra",
+                "título"
+            ],
+            "resposta": "O Quilombo de Barrocas é uma comunidade oficialmente reconhecida pela Fundação Cultural Palmares desde 2006. Nosso processo de titulação definitiva do território ainda está em andamento junto ao INCRA (Instituto Nacional de Colonização e Reforma Agrária). O reconhecimento oficial é fundamental para garantir nossos direitos territoriais e o acesso a políticas públicas específicas para comunidades quilombolas. Continuamos nossa luta pela titulação completa de nossas terras, um processo que envolve diversas etapas burocráticas e estudos antropológicos."
+        },
+        {
+            "id": "sustentabilidade",
+            "palavras": [
+                "sustentabilidade",
+                "agricultura",
+                "produção",
+                "alimentos",
+                "economia",
+                "renda",
+                "plantar",
+                "cultivar",
+                "orgânico",
+                "subsistência",
+                "sustentável"
+            ],
+            "resposta": "A sustentabilidade é um valor central para o Quilombo de Barrocas. Nossa comunidade mantém práticas agrícolas tradicionais e sustentáveis, com cultivo de alimentos orgânicos para consumo próprio e comercialização. Produzimos principalmente mandioca, feijão, milho, frutas nativas e hortaliças. Também desenvolvemos projetos de artesanato, turismo comunitário e beneficiamento de produtos da sociobiodiversidade. Essas atividades econômicas respeitam o meio ambiente e valorizam nossos saberes tradicionais, garantindo a permanência da comunidade em seu território com qualidade de vida."
+        },
+        {
+            "id": "educacao",
+            "palavras": [
+                "educação",
+                "escola",
+                "estudar",
+                "aprender",
+                "ensino",
+                "professores",
+                "alunos",
+                "crianças",
+                "jovens",
+                "conhecimento",
+                "aulas"
+            ],
+            "resposta": "A educação no Quilombo de Barrocas é um pilar fundamental. Temos uma escola comunitária que atende crianças e jovens até o ensino fundamental, com um currículo que valoriza tanto os conhecimentos universais quanto os saberes tradicionais quilombolas. Para o ensino médio, nossos jovens frequentam escolas nas cidades próximas. Desenvolvemos também projetos educacionais complementares como oficinas culturais, rodas de griôs (contadores de histórias) e intercâmbios com universidades. A educação quilombola busca fortalecer nossa identidade cultural enquanto prepara as novas gerações para os desafios contemporâneos."
+        },
+        {
+            "id": "religiosidade",
+            "palavras": [
+                "religião",
+                "fé",
+                "crenças",
+                "espiritual",
+                "rezas",
+                "orações",
+                "santos",
+                "divindades",
+                "orixás",
+                "candomblé",
+                "umbanda",
+                "católica",
+                "religiosa",
+                "terreiro"
+            ],
+            "resposta": "A religiosidade no Quilombo de Barrocas é diversa e sincrética, refletindo nossa ancestralidade africana e as influências do catolicismo popular brasileiro. Muitos membros da comunidade praticam religiões de matriz africana como o candomblé e a umbanda, preservando rituais, cantos e danças sagradas. Também celebramos festas católicas adaptadas à nossa realidade cultural. Nossa espiritualidade está intimamente ligada à natureza e aos ancestrais, com grande respeito aos mais velhos como guardiões de conhecimentos espirituais. Esta diversidade religiosa convive harmoniosamente dentro da comunidade, sendo um importante elemento de nossa identidade cultural."
+        },
+        {
+            "id": "liderancas",
+            "palavras": [
+                "liderança",
+                "líder",
+                "representante",
+                "associação",
+                "organização",
+                "presidente",
+                "coordenador",
+                "conselho",
+                "comunidade",
+                "governança"
+            ],
+            "resposta": "O Quilombo de Barrocas possui uma estrutura de liderança baseada tanto em aspectos tradicionais quanto contemporâneos. Temos uma Associação Comunitária formalmente constituída, com presidente e diretoria eleitos pela comunidade. Paralelamente, respeitamos o conselho de anciãos, formado pelos mais velhos da comunidade, que são consultados em decisões importantes. As mulheres têm papel fundamental na liderança local, coordenando diversos projetos e iniciativas. As decisões mais importantes são tomadas em assembleias comunitárias, onde todos os membros adultos podem participar e opinar, valorizando o processo democrático e coletivo."
+        },
+        {
+            "id": "desafios",
+            "palavras": [
+                "desafios",
+                "problemas",
+                "dificuldades",
+                "lutas",
+                "enfrentamento",
+                "racismo",
+                "preconceito",
+                "ameaças",
+                "conflitos",
+                "resistência"
+            ],
+            "resposta": "O Quilombo de Barrocas enfrenta diversos desafios em sua trajetória de resistência. Entre os principais estão: a luta pela titulação definitiva de nossas terras; o enfrentamento ao racismo estrutural e institucional; conflitos com fazendeiros e empresas interessadas em nosso território; acesso limitado a serviços públicos de qualidade como saúde, educação avançada e saneamento; e os impactos das mudanças climáticas em nossas atividades agrícolas. Apesar dessas dificuldades, mantemos nossa união comunitária e continuamos desenvolvendo estratégias de resistência, estabelecendo parcerias com organizações de direitos humanos, universidades e movimentos sociais para fortalecer nossa luta."
+        },
+        {
+            "id": "saude",
+            "palavras": [
+                "saúde",
+                "medicina",
+                "tradicional",
+                "ervas",
+                "plantas",
+                "cura",
+                "tratamento",
+                "doença",
+                "remédio",
+                "bem-estar",
+                "medicinal"
+            ],
+            "resposta": "A saúde no Quilombo de Barrocas integra conhecimentos tradicionais e acesso à medicina convencional. Preservamos saberes ancestrais sobre plantas medicinais e práticas de cura, com benzedeiras e curandeiros que utilizam ervas locais para tratamentos diversos. Ao mesmo tempo, lutamos pelo acesso aos serviços públicos de saúde, contando com visitas periódicas de agentes comunitários e uma pequena unidade básica de saúde nas proximidades. Para casos mais complexos, precisamos nos deslocar até a cidade mais próxima. Realizamos também ações preventivas e campanhas de saúde em parceria com universidades e ONGs, buscando garantir o bem-estar integral de nossa comunidade."
+        },
+        {
+            "id": "jovens",
+            "palavras": [
+                "jovens",
+                "juventude",
+                "adolescentes",
+                "futuro",
+                "novas gerações",
+                "tecnologia",
+                "internet",
+                "modernidade",
+                "oportunidades"
+            ],
+            "resposta": "A juventude do Quilombo de Barrocas representa nosso presente vibrante e futuro promissor. Os jovens quilombolas vivem o desafio de equilibrar as tradições ancestrais com as demandas do mundo contemporâneo. Temos projetos específicos para a juventude, incluindo oficinas culturais, formação política, capacitação profissional e inclusão digital. Muitos jovens têm acesso à internet e usam tecnologias para estudar e também para divulgar nossa cultura. Incentivamos que busquem formação superior, com vários estudantes em universidades através de políticas de cotas. O objetivo é que possam desenvolver habilidades que contribuam para o fortalecimento da comunidade, sem perder a conexão com suas raízes e identidade quilombola."
+        },
+        {
+            "id": "mulheres",
+            "palavras": [
+                "mulheres",
+                "mulher",
+                "gênero",
+                "feminino",
+                "matriarcas",
+                "mães",
+                "liderança feminina",
+                "artesãs"
+            ],
+            "resposta": "As mulheres desempenham papel central no Quilombo de Barrocas, sendo pilares fundamentais na preservação cultural, na economia familiar e na liderança comunitária. São as principais guardiãs de conhecimentos tradicionais relacionados à culinária, ervas medicinais, artesanato e rituais. Muitas ocupam posições de liderança na associação comunitária e coordenam projetos geradores de renda. Temos um coletivo de mulheres quilombolas que produz artesanato e alimentos típicos comercializados em feiras. Enfrentam desafios específicos relacionados à dupla discriminação (racial e de gênero), mas sua força e resiliência são marcas de nossa comunidade. Realizamos encontros e formações específicas sobre direitos das mulheres e equidade de gênero."
+        },
+        {
+            "id": "natureza",
+            "palavras": [
+                "natureza",
+                "meio ambiente",
+                "preservação",
+                "floresta",
+                "rios",
+                "animais",
+                "plantas",
+                "ecologia",
+                "conservação",
+                "ambiental"
+            ],
+            "resposta": "A relação do Quilombo de Barrocas com a natureza é de profundo respeito e interdependência. Nosso território inclui áreas de floresta preservada, nascentes e riachos que protegemos com muito cuidado. Mantemos práticas tradicionais sustentáveis de manejo da terra, extração de recursos naturais e agricultura que garantem a conservação da biodiversidade local. Utilizamos sistemas agroflorestais que combinam cultivos agrícolas com espécies nativas. Enfrentamos desafios como pressões de desmatamento no entorno e os impactos das mudanças climáticas. Desenvolvemos projetos de educação ambiental e recuperação de áreas degradadas, entendendo que nossa existência como comunidade tradicional está intrinsecamente ligada à saúde do meio ambiente que nos cerca."
+        },
+        {
+            "id": "turismo",
+            "palavras": [
+                "turismo",
+                "visita",
+                "visitantes",
+                "conhecer",
+                "turistas",
+                "passeio",
+                "guia",
+                "hospedagem",
+                "vivência",
+                "experiência"
+            ],
+            "resposta": "O Quilombo de Barrocas desenvolve um projeto de turismo de base comunitária, que permite aos visitantes conhecer nossa cultura e modo de vida de forma respeitosa e autêntica. Oferecemos roteiros guiados por membros da comunidade, apresentações culturais, oficinas de culinária e artesanato tradicional, além de trilhas ecológicas em nosso território. As visitas precisam ser agendadas previamente para garantirmos uma recepção adequada. Temos uma pequena estrutura de hospedagem familiar e servimos refeições com ingredientes locais. O turismo comunitário representa uma fonte complementar de renda e uma oportunidade de valorização de nossa cultura, sempre conduzido de maneira a respeitar nosso modo de vida e o meio ambiente."
+        },
+        {
+            "id": "gastronomia",
+            "palavras": [
+                "comida",
+                "culinária",
+                "gastronomia",
+                "alimentos",
+                "pratos",
+                "típicos",
+                "receitas",
+                "cozinha",
+                "tradicional",
+                "alimentação"
+            ],
+            "resposta": "A gastronomia do Quilombo de Barrocas é um rico patrimônio cultural que preserva sabores e técnicas ancestrais com influências africanas e indígenas. Entre nossos pratos tradicionais estão: o caruru (preparado com quiabo e camarão seco), vatapá, moquecas de peixe, beiju de tapioca, acarajé, arroz de cuxá e diversos doces à base de frutas locais e coco. A mandioca é um ingrediente central em muitas preparações. Nossa culinária utiliza principalmente ingredientes cultivados na própria comunidade ou coletados de forma sustentável na região. As receitas são transmitidas oralmente de geração em geração, principalmente pelas mulheres, que são as principais guardiãs desse conhecimento. Realizamos festivais gastronômicos anuais para celebrar e compartilhar esses saberes culinários."
+        },
+        {
+            "id": "artesanato",
+            "palavras": [
+                "artesanato",
+                "arte",
+                "manual",
+                "cerâmica",
+                "trançado",
+                "cestaria",
+                "tecido",
+                "tecelagem",
+                "artesão",
+                "artesã",
+                "criação"
+            ],
+            "resposta": "O artesanato do Quilombo de Barrocas representa nossa expressão artística e cultural através de técnicas transmitidas por gerações. Trabalhamos principalmente com cerâmica, usando técnicas ancestrais para criar utensílios domésticos e peças decorativas; cestaria e trançados feitos com palha, fibras e cipós da região; tecelagem manual em pequenos teares; e bonecas de pano que representam figuras importantes de nossa história e cultura. Utilizamos principalmente materiais naturais coletados de forma sustentável em nosso território. O artesanato é produzido principalmente pelas mulheres e representa tanto uma manifestação cultural quanto uma fonte de renda. Realizamos oficinas para ensinar essas técnicas às novas gerações e comercializamos nossas criações em feiras culturais, na própria comunidade para visitantes e através de parcerias com lojas especializadas."
+        },
+        {
+            "id": "ajuda",
+            "palavras": [
+                "ajudar",
+                "colaborar",
+                "contribuir",
+                "apoiar",
+                "auxílio",
+                "parceria",
+                "voluntário",
+                "doação",
+                "solidariedade"
+            ],
+            "resposta": "Existem diversas formas de apoiar o Quilombo de Barrocas. Você pode: visitar nossa comunidade e participar de nosso projeto de turismo comunitário; adquirir nossos produtos artesanais e alimentos; divulgar nossa história e cultura em suas redes sociais; participar como voluntário em projetos específicos (educação, saúde, meio ambiente); fazer doações para nossa associação comunitária; apoiar nossas campanhas por direitos territoriais; estabelecer parcerias institucionais caso represente alguma organização; ou simplesmente compartilhar conhecimentos sobre a importância das comunidades quilombolas para a história e cultura brasileiras. Para mais informações sobre como colaborar, entre em contato através de nosso site ou redes sociais."
+        },
+        {
+            "id": "eventos",
+            "palavras": [
+                "evento",
+                "festa",
+                "celebração",
+                "comemoração",
+                "festival",
+                "encontro",
+                "programação",
+                "agenda",
+                "calendário"
+            ],
+            "resposta": "O Quilombo de Barrocas mantém um rico calendário de eventos culturais ao longo do ano. Nossa principal celebração é a Festa da Consciência Negra, realizada em novembro, com apresentações culturais, oficinas, feira de produtos locais e debates. Em junho, celebramos festas juninas com elementos tradicionais quilombolas. Em agosto, temos o Festival de Colheita, quando celebramos os resultados de nosso trabalho agrícola. Realizamos também encontros de mestres de capoeira, rodas de samba, festivais gastronômicos e feiras de artesanato em datas específicas. Para conhecer nossa programação completa e datas atualizadas, recomendamos consultar nosso site ou redes sociais, onde divulgamos todos os eventos abertos ao público."
+        },
+        {
+            "id": "pesquisa",
+            "palavras": [
+                "pesquisa",
+                "acadêmica",
+                "estudo",
+                "tcc",
+                "monografia",
+                "pesquisador",
+                "universidade",
+                "entrevista",
+                "investigação",
+                "científica"
+            ],
+            "resposta": "O Quilombo de Barrocas está aberto a colaborações com pesquisadores e instituições acadêmicas, desde que sigam princípios éticos e de respeito à nossa comunidade. Temos um protocolo para receber pesquisadores que inclui: contato prévio explicando os objetivos da pesquisa; apresentação à liderança comunitária; termo de consentimento livre e esclarecido; compromisso de retorno dos resultados à comunidade; e respeito aos conhecimentos tradicionais. Já participamos de diversas pesquisas nas áreas de antropologia, história, agroecologia, saúde e educação. Valorizamos estas parcerias quando conduzidas de forma respeitosa e com benefícios mútuos. Para solicitar autorização para pesquisas, entre em contato via email disponível em nosso site oficial."
+        },
+        {
+            "id": "comunicacao",
+            "palavras": [
+                "contato",
+                "comunicar",
+                "email",
+                "telefone",
+                "WhatsApp",
+                "redes sociais",
+                "Facebook",
+                "Instagram",
+                "mensagem"
+            ],
+            "resposta": "Para entrar em contato com o Quilombo de Barrocas, você pode utilizar os seguintes canais: Email: contato@quilombobarrocas.org.br; Telefone/WhatsApp: (75) 98765-4321; Redes sociais: Instagram e Facebook @quilombobarrocas. Nosso site oficial (quilombo-barrocas.netlify.app) também conta com um formulário de contato. Para visitas, solicitamos agendamento prévio com pelo menos uma semana de antecedência. Respondemos mensagens geralmente em até 48 horas em dias úteis. Para assuntos específicos como pesquisas acadêmicas, parcerias institucionais ou imprensa, favor indicar o tema no assunto da mensagem."
+        },
+        {
+            "id": "equipe_dev",
+            "palavras": [
+                "site",
+                "desenvolvedor",
+                "programação",
+                "programador",
+                "web",
+                "desenvolvido",
+                "criado",
+                "construído",
+                "design",
+                "webmaster"
+            ],
+            "resposta": "O site do Quilombo de Barrocas (quilombo-barrocas.netlify.app) foi desenvolvido por uma equipe de programadores voluntários em parceria com estudantes de computação da universidade local. O projeto foi realizado de forma colaborativa, com participação ativa de membros da comunidade quilombola que contribuíram com conteúdos, histórias e diretrizes para representar adequadamente nossa cultura e história. A hospedagem é feita na plataforma Netlify, e o site utiliza tecnologias como HTML5, CSS3 e JavaScript, sendo otimizado para acesso inclusive em conexões mais lentas de internet. Estamos sempre abertos a sugestões para melhorar nossa presença digital e tornar nossas informações mais acessíveis."
+        },
+        {
+            "id": "documentos",
+            "palavras": [
+                "documento",
+                "certificado",
+                "legislação",
+                "lei",
+                "decreto",
+                "relatório",
+                "registro",
+                "documentação"
+            ],
+            "resposta": "O Quilombo de Barrocas possui documentação oficial que inclui: Certificado de reconhecimento emitido pela Fundação Cultural Palmares em 2006; Relatório Técnico de Identificação e Delimitação (RTID) elaborado pelo INCRA; Estatuto da Associação Comunitária do Quilombo de Barrocas; registros históricos e depoimentos dos moradores mais antigos; e documentação fotográfica de nossa comunidade ao longo das décadas. Estamos no processo de digitalização destes documentos para preservação e futura disponibilização em nosso acervo digital. O acesso a alguns documentos específicos pode ser solicitado para fins de pesquisa mediante autorização da diretoria da Associação. Nossa documentação é fundamental para comprovar nossa trajetória histórica e garantir nossos direitos territoriais."
+        },
+        {
+            "id": "agradecimentos",
+            "palavras": [
+                "obrigado",
+                "obrigada",
+                "agradeço",
+                "agradecido",
+                "grato",
+                "grata",
+                "valeu",
+                "thanks",
+                "gracias"
+            ],
+            "resposta": "De nada! Foi um prazer compartilhar informações sobre o Quilombo de Barrocas. Esperamos ter ajudado a esclarecer suas dúvidas. Se precisar de mais informações, estamos à disposição. Agradecemos seu interesse em nossa comunidade e nossa história. Você também pode nos visitar pessoalmente para conhecer mais sobre nossa cultura e modo de vida. Até a próxima!"
+        },
+        {
+            "id": "nao_sei",
+            "palavras": [],
+            "resposta": "Não tenho informações específicas sobre esse tema relacionado ao Quilombo de Barrocas. Posso ajudar com questões sobre nossa história, cultura, localização, atividades econômicas, eventos ou outras informações gerais sobre nossa comunidade. Você poderia reformular sua pergunta ou especificar melhor o que gostaria de saber? Estou aqui para ajudar no que for possível."
+        }
+    ],
+    "config": {
+        "limiar_confianca": 0.6,
+        "respostas_multiplas": true,
+        "max_respostas": 2,
+        "mensagem_nao_entendi": "Desculpe, não consegui entender sua pergunta sobre o Quilombo de Barrocas. Poderia reformular ou perguntar sobre temas como nossa história, cultura, localização, eventos ou projetos comunitários?",
+        "mensagem_boas_vindas": "Olá! Bem-vindo(a) ao chatbot do Quilombo de Barrocas. Estou aqui para responder suas perguntas sobre nossa comunidade, história, cultura, projetos e muito mais. Como posso ajudar você hoje?"
+    },
+    "algoritmo": {
+        "descricao": "Algoritmo de correspondência de palavras-chave com ponderação de relevância. Para cada mensagem do usuário: 1) Identificar todas as palavras-chave presentes na mensagem; 2) Calcular pontuação para cada gatilho com base na quantidade e relevância das palavras encontradas; 3) Selecionar o(s) gatilho(s) com maior pontuação acima do limiar de confiança; 4) Se nenhum gatilho atingir o limiar, usar resposta padrão 'nao_sei'; 5) Em caso de múltiplos gatilhos com pontuação similar, combinar até 'max_respostas' respostas se 'respostas_multiplas' for verdadeiro."
+    },
+    "exemplos": [
+        {
+            "pergunta": "Onde fica o Quilombo de Barrocas?",
+            "gatilhos_esperados": [
+                "localizacao"
+            ],
+            "explicacao": "A pergunta contém a palavra-chave 'onde' que está diretamente relacionada ao gatilho de localização."
+        },
+        {
+            "pergunta": "Quais são as festas tradicionais da comunidade?",
+            "gatilhos_esperados": [
+                "cultura",
+                "eventos"
+            ],
+            "explicacao": "A pergunta contém palavras relacionadas tanto à cultura ('tradicionais') quanto a eventos ('festas'), portanto pode acionar ambos os gatilhos."
+        },
+        {
+            "pergunta": "Como as mulheres participam da liderança do quilombo?",
+            "gatilhos_esperados": [
+                "mulheres",
+                "liderancas"
+            ],
+            "explicacao": "Esta pergunta combina elementos de dois gatilhos: 'mulheres' e 'liderança', devendo retornar informações de ambos."
+        }
+    ]
+}
