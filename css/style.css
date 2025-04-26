@@ -1,66 +1,79 @@
+/* ========== Variables ========== */
 :root {
-    --clr-dark: #180d04;
-    --clr-dark-transparent: rgba(24, 13, 4, .8);
-    --clr-primary: #BFBFC1;
-    --clr-primary-dark: #6F4E37;
-    --clr-secondary: #e0e0e0;
-    --clr-primary-light: #e7dfb1;
+    /* Color palette */
+    --color-dark: #180d04;
+    --color-dark-transparent: rgba(24, 13, 4, 0.8);
+    --color-primary: #BFBFC1;
+    --color-primary-dark: #6F4E37;
+    --color-primary-light: #e7dfb1;
+    --color-secondary: #e0e0e0;
+
+    /* Spacing */
+    --spacing-xs: 3px;
+    --spacing-sm: 8px;
+    --spacing-md: 10px;
+    --spacing-lg: 1rem;
+    --spacing-xl: 1.5rem;
+    --spacing-2xl: 2rem;
+    --spacing-3xl: 3rem;
+    --spacing-5xl: 5rem;
+
+    /* Typography */
+    --font-size-base: 1.5rem;
+    --font-size-lg: clamp(1.6rem, 10vw, 6rem);
+
+    /* Borders */
+    --border-standard: 8px solid var(--color-primary-dark);
+    --border-accent: 8px solid var(--color-primary-light);
+
+    /* Other */
+    --z-index-dropdown: 999;
+    --z-index-navbar: 9999;
 }
 
+/* ========== Reset ========== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ========== Base Styles ========== */
 body {
-    font-size: 1.5em;
+    font-size: var(--font-size-base);
     overflow-x: hidden;
 }
 
 p {
-    font-size: 1.5rem;
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-lg);
+}
+
+h2 {
+    margin: var(--spacing-2xl) 0;
 }
 
 .blockquote {
-    padding-top: 1.5rem;
+    padding-top: var(--spacing-xl);
 }
 
 .btn-group.dropup {
     position: fixed;
-    left: 3px;
-    bottom: 3px;
-    z-index: 999;
+    left: var(--spacing-md);
+    bottom: var(--spacing-md);
+    z-index: var(--z-index-dropdown);
 }
 
+/* ========== Navigation ========== */
 nav {
-    z-index: 9999;
-}
-
-.bloco img {
-    width: 50%;
-    max-width: 100%;
-    margin-bottom: 2rem;
-    border: 8px solid var(--clr-primary-light);
-}
-
-p+img,
-img+p {
-    margin-left: 2rem;
-}
-
-h2 {
-    margin: 2rem 0;
-}
-
-p {
-    margin-bottom: 1rem;
+    z-index: var(--z-index-navbar);
 }
 
 .navbar {
-    background-color: var(--clr-dark);
+    background-color: var(--color-dark);
 }
 
+/* ========== Layout Components ========== */
 .secao {
     align-items: center;
     display: flex;
@@ -68,50 +81,66 @@ p {
     justify-content: center;
     min-height: 100vh;
     width: 100vw;
-    padding: 5rem 0;
+    padding: var(--spacing-5xl) 0;
 }
 
+/* Bloco - Flex container for content sections */
+.bloco {
+    display: flex;
+    margin-top: var(--spacing-2xl);
+}
+
+.bloco img {
+    width: 50%;
+    max-width: 100%;
+    margin-bottom: var(--spacing-2xl);
+    border: var(--border-accent);
+}
+
+.bloco img+img {
+    margin-left: var(--spacing-lg);
+}
+
+.bloco img+div {
+    margin-left: var(--spacing-lg);
+}
+
+.bloco .author-img {
+    width: 300px;
+    margin: 0;
+}
+
+p+img,
+img+p {
+    margin-left: var(--spacing-2xl);
+}
+
+/* Image Grid */
+.grade-imagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-lg);
+}
+
+/* ========== Section Specific Styles ========== */
+/* Light-background sections */
 #introducao,
 #documentario,
 #autoria,
 .modal-content {
-    background-color: var(--clr-secondary);
+    background-color: var(--color-secondary);
 }
 
-.modal-header {
-    padding: 1rem 1rem 0 1rem;
-}
-
-.modal-body {
-    padding: 0 1rem;
-}
-
-.modal-footer {
-    padding: 10px;
-}
-
-#introducao img,
-#documentario img,
-#autoria img,
-#documentario iframe {
-    border: 8px solid var(--clr-primary-dark);
-}
-
+/* Dark-background sections */
 #historia,
 #galeria,
 #creditos,
 footer {
-    background-color: var(--clr-dark);
-    color: var(--clr-primary);
+    background-color: var(--color-dark);
+    color: var(--color-primary);
 }
 
-.pagina-inicial h1 {
-    color: transparent;
-    font-size: clamp(1.6rem, 10vw, 6rem);
-    line-height: 60%;
-    z-index: 999;
-}
-
+/* Homepage Header */
 .pagina-inicial {
     text-align: center;
     position: relative;
@@ -127,11 +156,19 @@ footer {
     top: 0;
     left: 0;
     inset: 0;
-    background: radial-gradient(var(--clr-dark-transparent), var(--clr-dark));
+    background: radial-gradient(var(--color-dark-transparent), var(--color-dark));
 }
 
+.pagina-inicial h1 {
+    color: transparent;
+    font-size: var(--font-size-lg);
+    line-height: 60%;
+    z-index: 999;
+}
+
+/* Title Styles */
 .nome-quilombo {
-    animation: entrarNomeComunidade 300ms ease-in-out 1s normal forwards;
+    animation: gradientSweepLeftToRight 300ms ease-in-out 1s normal forwards;
     font-family: "Rubik Moonrocks", sans-serif;
     font-size: 1.5em;
     font-style: normal;
@@ -139,44 +176,22 @@ footer {
 }
 
 .nome-deBarrocas {
+    animation: gradientSweepLeftToRight 300ms ease-in-out 1s normal forwards;
     font-family: "Rubik", serif;
-    /*color: var(--clr-primary);*/
-    animation: entrarNomeComunidade 300ms ease-in-out 1s normal forwards;
-    font-size: .6em;
+    font-size: 0.6em;
     font-style: normal;
     font-weight: 500;
 }
 
-.bloco {
-    display: flex;
-    margin-top: 2rem;
-}
-
-.bloco img+img {
-    margin-left: 1rem;
-}
-
-.bloco .author-img {
-    width: 300px;
-}
-
-.bloco img+div {
-    margin-left: 1rem;
-}
-
-.bloco .author-img {
-    margin: 0;
-}
-
+/* Section: Documentary */
 #documentario .video-container {
     position: relative;
     overflow: hidden;
     width: 100%;
     padding-top: 56.25%;
-    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    /* 16:9 Aspect Ratio */
 }
 
-/* Then style the iframe to fit in the container div with full height and width */
 .responsive-iframe {
     position: absolute;
     top: 0;
@@ -187,20 +202,22 @@ footer {
     height: 100%;
 }
 
-.grade-imagens {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+/* Section: Images with Borders */
+#introducao img,
+#documentario img,
+#autoria img,
+#documentario iframe {
+    border: var(--border-standard);
 }
 
+/* Section: Gallery */
 #galeria img {
     width: 48%;
-    /* width: 49%; */
-    /* margin: 0; */
 }
 
+/* ========== Footer ========== */
 footer {
-    padding: 3rem 0;
+    padding: var(--spacing-3xl) 0;
 }
 
 footer .container {
@@ -208,6 +225,7 @@ footer .container {
     flex-direction: column;
 }
 
+/* ========== Media Queries ========== */
 @media only screen and (max-width: 992px) {
     .bloco {
         flex-direction: column;
@@ -233,87 +251,66 @@ footer .container {
 
     #galeria img {
         width: auto;
-        /* width: 49%; */
-        /* margin: 0; */
     }
 }
 
-/* ANIMACOES */
-@keyframes entrarNomeComunidade {
+/* ========== Animations ========== */
+@keyframes gradientSweepLeftToRight {
     0% {
-        background: -webkit-linear-gradient(135deg, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent);
-        -webkit-background-clip: text;
+        background: linear-gradient(135deg,
+                transparent 0%, transparent 10%, transparent 20%, transparent 30%,
+                transparent 40%, transparent 50%, transparent 60%, transparent 70%,
+                transparent 80%, transparent 90%, transparent 100%);
         background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    10% {
-        background: -webkit-linear-gradient(135deg, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, var(--clr-primary-dark));
         -webkit-background-clip: text;
-        background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
     20% {
-        background: -webkit-linear-gradient(135deg, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, var(--clr-primary-dark), var(--clr-primary-light));
-        -webkit-background-clip: text;
+        background: linear-gradient(135deg,
+                transparent 0%, transparent 10%, transparent 20%, transparent 30%,
+                transparent 40%, transparent 50%, transparent 60%, transparent 70%,
+                transparent 80%, var(--color-primary-dark) 90%, var(--color-primary-light) 100%);
         background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    30% {
-        background: -webkit-linear-gradient(135deg, transparent, transparent, transparent, transparent, transparent, transparent, transparent, var(--clr-primary-dark), var(--clr-primary-light), var(--clr-primary-dark));
         -webkit-background-clip: text;
-        background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
     40% {
-        background: -webkit-linear-gradient(135deg, transparent, transparent, transparent, transparent, transparent, transparent, var(--clr-primary-dark), var(--clr-primary-light), var(--clr-primary-dark));
-        -webkit-background-clip: text;
+        background: linear-gradient(135deg,
+                transparent 0%, transparent 10%, transparent 20%, transparent 30%,
+                transparent 40%, transparent 50%, transparent 60%, var(--color-primary-dark) 70%,
+                var(--color-primary-light) 80%, var(--color-primary-dark) 90%, transparent 100%);
         background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    50% {
-        background: -webkit-linear-gradient(135deg, transparent, transparent, transparent, transparent, transparent, var(--clr-primary-dark), var(--clr-primary-light), var(--clr-primary-dark));
         -webkit-background-clip: text;
-        background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
     60% {
-        background: -webkit-linear-gradient(135deg, transparent, transparent, transparent, transparent, var(--clr-primary-dark), var(--clr-primary-light), var(--clr-primary-dark));
-        -webkit-background-clip: text;
+        background: linear-gradient(135deg,
+                transparent 0%, transparent 10%, transparent 20%, transparent 30%,
+                var(--color-primary-dark) 40%, var(--color-primary-light) 50%, var(--color-primary-dark) 60%,
+                transparent 70%, transparent 80%, transparent 90%, transparent 100%);
         background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    70% {
-        background: -webkit-linear-gradient(135deg, transparent, transparent, transparent, var(--clr-primary-dark), var(--clr-primary-light), var(--clr-primary-dark));
         -webkit-background-clip: text;
-        background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
     80% {
-        background: -webkit-linear-gradient(135deg, transparent, transparent, var(--clr-primary-dark), var(--clr-primary-light), var(--clr-primary-dark));
-        -webkit-background-clip: text;
+        background: linear-gradient(135deg,
+                transparent 0%, var(--color-primary-dark) 10%, var(--color-primary-light) 20%, var(--color-primary-dark) 30%,
+                transparent 40%, transparent 50%, transparent 60%, transparent 70%,
+                transparent 80%, transparent 90%, transparent 100%);
         background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    90% {
-        background: -webkit-linear-gradient(135deg, transparent, var(--clr-primary-dark), var(--clr-primary-light), var(--clr-primary-dark));
         -webkit-background-clip: text;
-        background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
     100% {
-        background: -webkit-linear-gradient(135deg, var(--clr-primary-dark), var(--clr-primary-light), var(--clr-primary-dark));
-        -webkit-background-clip: text;
+        background: linear-gradient(135deg,
+                var(--color-primary-dark) 0%, var(--color-primary-light) 50%, var(--color-primary-dark) 100%);
         background-clip: text;
+        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 }

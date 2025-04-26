@@ -1,19 +1,21 @@
-/* :root {
+:root {
+    /* Color palette */
     --clr-secondary: #e0e0e0;
-} */
 
-.modal-content {
-    background-color: var(--clr-secondary);
+    /* Spacing */
+    --spacing-md: 10px;
+    --spacing-lg: 1rem;
 }
 
+/* ========== Modal Styles ========== */
 .modal-header {
-    padding: 1rem 1rem 0 1rem;
+    padding: var(--spacing-lg) var(--spacing-lg) 0 var(--spacing-lg);
 }
 
 .modal-body {
-    padding: 0 1rem;
+    padding: 0 var(--spacing-lg);
 }
 
 .modal-footer {
-    padding: 10px;
+    padding: var(--spacing-md);
 }
