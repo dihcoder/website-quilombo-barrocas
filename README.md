@@ -185,7 +185,7 @@ Este repositório contém o código-fonte do website do Quilombo Barrocas, desen
 
 Quilombos são assentamentos brasileiros fundados por pessoas de origem africana, incluindo escravizados fugitivos. Essas comunidades representam um importante patrimônio cultural e de resistência na história brasileira. Este projeto ajuda a preservar digitalmente e compartilhar as ricas tradições culturais da comunidade do Quilombo Barrocas.
 
-O website está atualmente implantado e acessível [em quilombo-barrocas.netlify.app](https://quilombo-barrocas.netlify.app/).
+O website está atualmente implantado e acessível em [quilombo-barrocas.netlify.app](https://quilombo-barrocas.netlify.app/).
 
 ## Evolução do Chatbot: Do Básico à Inteligência Artificial Generativa do Google
 
