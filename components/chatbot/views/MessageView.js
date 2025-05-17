@@ -1,7 +1,4 @@
-/**
- * /components/chatbot/views/MessageView.js
- * Handles rendering of individual messages
- */
+// Handles rendering of individual messages
 class MessageView {
     render(message, container) {
         const messageDiv = $('<div></div>');

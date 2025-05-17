@@ -1,8 +1,5 @@
-/**
- * /components/chatbot/controllers/ChatbotController.js
- * Coordinates between model and view components
- */
 class ChatbotController {
+
     constructor(model, view) {
         this.model = model;
         this.view = view;
@@ -14,17 +11,12 @@ class ChatbotController {
             // Initialize view first to have DOM elements ready
             await this.view.initialize();
 
-            // Load model data
-            await this.model.loadData();
-
             // Setup event listeners
             this.setupEventListeners();
-
-            // Display welcome message
-            this.displayWelcomeMessage();
-
             this.isInitialized = true;
+
             return true;
+
         } catch (error) {
             console.error('Failed to initialize chatbot:', error);
             this.handleErrorMessage();
@@ -32,7 +24,7 @@ class ChatbotController {
         }
     }
 
-    setupEventListeners() {
+    async setupEventListeners() {
         // Chatbot visibility controls
         this.view.elements.openButton.on('click', () => this.view.openChatbot());
         this.view.elements.closeButton.on('click', () => this.view.closeChatbot());
@@ -42,15 +34,35 @@ class ChatbotController {
 
         // Escape key handler
         $(document).on('keydown', (e) => this.handleEscapeKey(e));
+
+
+        await this.view.renderChatIntroPanel();
+
+        Object.entries(this.view.elements.suggestedQuestions).forEach(([key, el]) => {
+            el.addEventListener('click', () => {
+                const question = el.innerText;
+                this.sendSuggestedMessage(question);
+            });
+        });
+
     }
 
-    displayWelcomeMessage() {
-        const welcomeMessage = this.model.getWelcomeMessage();
+    async sendSuggestedMessage(messageText) {
+        const userMessage = this.model.addMessage('user', messageText);
+        this.view.renderMessage(userMessage);
+
+        const botResponseText = await this.model.generateResponse(messageText);
+        const botMessage = await this.model.addMessage('model', botResponseText);
+        this.view.renderMessage(botMessage);
+    }
+
+    async displayWelcomeMessage(language) {
+        const welcomeMessage = await this.model.getWelcomeMessage(language);
 
         if (welcomeMessage) {
             setTimeout(() => {
-                const message = this.model.addMessage('bot', welcomeMessage);
-                this.view.renderMessage(message);
+                const msg = { sender: 'model', text: welcomeMessage };
+                this.view.renderMessage(msg);
             }, 500);
         }
     }
@@ -64,7 +76,7 @@ class ChatbotController {
         }
     }
 
-    handleMessageSubmission(event) {
+    async handleMessageSubmission(event) {
         event.preventDefault();
 
         const userMessageText = this.view.getUserMessage();
@@ -78,19 +90,16 @@ class ChatbotController {
         this.view.clearInput();
 
         // Process message and get response
-        const botResponseText = this.model.generateResponse(userMessageText);
+        const botResponseText = await this.model.generateResponse(userMessageText);
 
-        // Simulate typing delay before showing response
-        const TYPING_DELAY_MS = 1000;
-        setTimeout(() => {
-            const botMessage = this.model.addMessage('bot', botResponseText);
-            this.view.renderMessage(botMessage);
-        }, TYPING_DELAY_MS);
+        const botMessage = await this.model.addMessage('model', botResponseText);
+        this.view.renderMessage(botMessage);
+
     }
 
     handleErrorMessage() {
         const errorMessage = this.model.getDefaultErrorMessage();
-        const message = this.model.addMessage('bot', errorMessage);
+        const message = this.model.addMessage('model', errorMessage);
         this.view.renderMessage(message);
     }
 }

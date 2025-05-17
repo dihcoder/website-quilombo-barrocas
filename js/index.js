@@ -1,11 +1,11 @@
-import {loadCookiesModal} from "../components/modal_cookies/script.js";
+import { loadCookiesModal } from "../components/modal_cookies/script.js";
 import switchLanguage from "./switchLanguage.js";
-import detectLanguage from "./detectLanguage.js";
-import {loadChatbot} from "../components/chatbot/index.js";
+import getUserPreferredLanguage from "./getUserPreferredLanguage.js";
+import { loadChatbot } from "../components/chatbot/index.js";
 
 export const translationsObj = {};
 
-const userPreferredLanguage = localStorage.getItem('preferredLanguage') || detectLanguage();
+const userPreferredLanguage = getUserPreferredLanguage();
 switchLanguage(userPreferredLanguage);
 loadCookiesModal();
 loadChatbot();

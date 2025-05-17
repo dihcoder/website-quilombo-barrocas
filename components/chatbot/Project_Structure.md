@@ -8,8 +8,6 @@
 │   └── MessageView.js   # Individual message rendering
 ├── controllers/         # Application flow
 │   └── ChatbotController.js  # Coordinates model and view
-├── utils/               # Helper functions
-│   └── TextProcessor.js # Text analysis utilities
 ├── factories/           # Object creation patterns
 │   └── ChatbotFactory.js # Creates chatbot instances
 ├── index.js             # Main entry point
