@@ -1,7 +1,3 @@
-/**
- * /components/chatbot/index.js
- * Main entry point for the chatbot component
- */
 import ChatbotFactory from './factories/ChatbotFactory.js';
 
 // Export main function to load chatbot

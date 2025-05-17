@@ -23,11 +23,11 @@ export default async function switchLanguage(language) {
 async function updateLanguageSettings(language) {
   // Update HTML lang attribute
   setHtmlLangAttribute(language);
-  
+
   // Load and store translations
   const translations = await loadLanguageFile(language);
   Object.assign(translationsObj, translations);
-  
+
   // Save user preference
   saveLanguagePreference(language);
 }

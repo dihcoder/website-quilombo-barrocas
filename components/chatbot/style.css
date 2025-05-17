@@ -12,8 +12,8 @@
     --color-accent: #e7dfb1;
 
     /* Dimensions */
-    --chatbot-width: min(300px, 100%);
-    --chatbot-height: 400px;
+    --chatbot-width: min(380px, 100%);
+    --chatbot-height: min(480px, 100%);
     --icon-size: 50px;
     --icon-inner-size: 25px;
 
@@ -132,6 +132,45 @@ p {
     font-size: var(--font-size-sm);
 }
 
+/* ============= Chat Itro Panel ========== */
+.chat-intro {
+    margin-bottom: var(--spacing-md);
+    padding: var(--spacing-xl) var(--spacing-md);
+    border-radius: var(--border-radius-lg);
+    word-wrap: break-word;
+    font-size: var(--font-size-sm);
+    color: #333;
+    align-self: center;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom-left-radius: 4px;
+    text-align: center;
+
+    .title {
+        font-size: 1.2rem;
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .description {
+        font-size: var(--font-size-xs);
+        margin-bottom: var(--spacing-lg);
+    }
+
+    button {
+        border: none;
+        background-color: var(--color-gray-200);
+        color: #333;
+        font-size: var(--font-size-xs);
+        padding: 2px 15px;
+        margin-bottom: 5px;
+        border-radius: 1rem;
+
+        &:hover {
+            background-color: var(--color-accent);
+        }
+    }
+}
+
 /* ========== Icon Button ========== */
 .icon-button {
     background: none;
@@ -171,7 +210,7 @@ p {
     border-bottom-right-radius: 4px;
 }
 
-.bot {
+.bot, .system, .model {
     background-color: var(--color-accent);
     color: #333;
     align-self: flex-start;

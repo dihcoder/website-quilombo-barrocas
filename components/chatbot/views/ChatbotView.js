@@ -1,9 +1,7 @@
 import MessageView from '../views/MessageView.js'
+import {translationsObj} from '../../../js/index.js';
 
-/**
- * /components/chatbot/views/ChatbotView.js
- * Manages the chatbot UI and user interactions
- */
+// Manages the chatbot UI and user interactions
 class ChatbotView {
     constructor() {
         this.elements = {};
@@ -38,6 +36,50 @@ class ChatbotView {
 
     renderMessage(message) {
         return this.messageView.render(message, this.elements.chatWindow);
+    }
+
+    async renderChatIntroPanel() {
+        const panel = document.createElement('div');
+        panel.classList.add('chat-intro');
+
+        // Título
+        const title = document.createElement('h5');
+        title.classList.add('title');
+        title.id = 'chatbotIntroTitle';
+        title.textContent = translationsObj.chatbotIntroTitle || 'Conheça o Quilombo Barrocas!';
+        panel.appendChild(title);
+
+        // Descrição
+        const description = document.createElement('p');
+        description.classList.add('description');
+        description.id = 'chatbotIntroDescription';
+        description.textContent =
+            translationsObj.chatbotIntroDescription || 'O Quilombo Barrocas é uma comunidade rica em cultura e tradições. Aqui, você pode aprender mais sobre nossa história, tradições e muito mais.';
+        panel.appendChild(description);
+
+        // Perguntas sugeridas
+        const ptQuestions =  [
+            'Quais são suas tradições culturais?',
+            'Como surgiu o Quilombo Barrocas?',
+            'Por que o nome é Barrocas?'
+        ];
+
+        this.elements.suggestedQuestions = {};
+        
+        for (let i = 1; i <= 3; i++) {
+            const qId = `chatbotSuggestedQuestion${i}`;
+            const qText = translationsObj[qId] || ptQuestions[i - 1];
+            
+            const button = document.createElement('button');
+            button.textContent = qText;
+            button.id = qId;
+            Object.assign(this.elements.suggestedQuestions, {
+                [qId]: button
+            });
+            panel.appendChild(button);
+        }
+
+        return await this.elements.chatWindow.append(panel);
     }
 
     scrollToLatestMessage() {

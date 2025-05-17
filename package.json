@@ -1,0 +1,23 @@
+{
+  "name": "website-quilombo-barrocas",
+  "version": "1.0.0",
+  "description": "![Quilombo](https://github.com/user-attachments/assets/4f82f479-dd4e-4197-97bb-afb03edba8f3)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dihcoder/website-quilombo-barrocas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dihcoder/website-quilombo-barrocas/issues"
+  },
+  "homepage": "https://github.com/dihcoder/website-quilombo-barrocas#readme",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1"
+  }
+}
