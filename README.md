@@ -1,4 +1,5 @@
 # Quilombo Barrocas Website
+
 ![Quilombo](https://github.com/user-attachments/assets/4f82f479-dd4e-4197-97bb-afb03edba8f3)
 
 <br/>
@@ -8,6 +9,7 @@
 - [Quilombo Barrocas Website](#quilombo-barrocas-website)
   - [Table of Contents / índice](#table-of-contents--índice)
     - [English](#english)
+    - [Português](#portugues)
   - [About the Project](#about-the-project)
   - [Evolution of the Chatbot: From Basic to Google Generative AI](#evolution-of-the-chatbot-from-basic-to-google-generative-ai)
   - [Project Structure](#project-structure)
@@ -18,7 +20,6 @@
   - [Technologies Used](#technologies-used)
   - [Contributing](#contributing)
   - [License](#license)
-    - [Português](#português)
   - [Sobre o Projeto](#sobre-o-projeto)
   - [Evolução do Chatbot: Do Básico à Inteligência Artificial Generativa do Google](#evolução-do-chatbot-do-básico-à-inteligência-artificial-generativa-do-google)
   - [Estrutura do Projeto](#estrutura-do-projeto)
