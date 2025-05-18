@@ -28,8 +28,8 @@
     - [Desenvolvimento Local](#desenvolvimento-local)
     - [Deploy](#deploy)
   - [Tecnologias Utilizadas](#tecnologias-utilizadas)
-  - [Contribuições](#contribuições)
-  - [Licença](#licença)
+  - [Contribuições](#contribuicoes)
+  - [Licença](#licenca)
 
 <br/>
 <br/>
