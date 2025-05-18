@@ -9,7 +9,7 @@
 - [Quilombo Barrocas Website](#quilombo-barrocas-website)
   - [Table of Contents / índice](#table-of-contents--índice)
     - [English](#english)
-    - [Português](#português)
+    - [Português](#portugues)
   - [About the Project](#about-the-project)
   - [Evolution of the Chatbot: From Basic to Google Generative AI](#evolution-of-the-chatbot-from-basic-to-google-generative-ai)
   - [Project Structure](#project-structure)
@@ -21,7 +21,7 @@
   - [Contributing](#contributing)
   - [License](#license)
   - [Sobre o Projeto](#sobre-o-projeto)
-  - [Evolução do Chatbot: Do Básico à Inteligência Artificial Generativa do Google](#evolução-do-chatbot-do-básico-à-inteligência-artificial-generativa-do-google)
+  - [Evolução do Chatbot: Do Básico à Inteligência Artificial Generativa do Google](#evolucao-do-chatbot-do-basico-a-inteligencia-artificial-generativa-do-google)
   - [Estrutura do Projeto](#estrutura-do-projeto)
   - [Funcionalidades](#funcionalidades)
   - [Como Usar](#como-usar)
@@ -179,6 +179,7 @@ This project is licensed under the ISC License. See the package.json file for de
 ---
 
 ### Português
+
 ## Sobre o Projeto
 
 Este repositório contém o código-fonte do website do Quilombo Barrocas, desenvolvido como parte de um projeto da faculdade de Engenharia de Software. O website visa promover a cultura, história e informações sobre a comunidade do Quilombo Barrocas.
