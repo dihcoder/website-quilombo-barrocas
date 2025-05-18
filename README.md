@@ -1,6 +1,6 @@
 # Quilombo Barrocas Website
 
-![Quilombo](https://github.com/user-attachments/assets/4f82f479-dd4e-4197-97bb-afb03edba8f3)
+![project-cover](https://github.com/user-attachments/assets/7497499d-ede6-48d9-989c-df715424ba64)
 
 <br/>
 
